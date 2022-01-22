@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/background.jpg") center/cover no-repeat fixed;
+    url("./images/bg4.jpg") center/cover no-repeat fixed;
   font-family: "Poppins", sans-serif;
   margin: 0;
   display: flex;
@@ -18,8 +18,18 @@ body {
 }
 .countdown-container {
   display: flex;
+  text-align: center;
 }
 h1 {
+  font-weight: normal;
   font-size: 4rem;
   margin-top: -20rem;
+}
+.big-text {
+  font-size: 6rem;
+  margin: 0 2rem 1rem 2rem;
+  font-weight: 500;
+}
+.countdown-container span {
+  font-size: 1.5rem;
 }
