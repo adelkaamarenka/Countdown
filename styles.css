@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 150vh;
+  min-height: 100vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./images/bg4.jpg") center/cover no-repeat fixed;
@@ -27,7 +27,7 @@ h1 {
   justify-content: center;
 }
 .big-text {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 1rem 2rem;
   font-weight: 500;
   line-height: 1;
@@ -38,7 +38,7 @@ h1 {
   min-width: 12rem;
 }
 .countdown-el span {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -51,5 +51,11 @@ h1 {
   h1 {
     font-size: 4rem;
     margin-top: 5rem;
+  }
+  .big-text {
+    font-size: 6rem;
+  }
+  .countdown-el span {
+    font-size: 1.5rem;
   }
 }
