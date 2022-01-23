@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 120vh;
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./images/bg4.jpg") center/cover no-repeat;
@@ -42,9 +42,6 @@ h1 {
 }
 
 @media only screen and (min-width: 600px) {
-  body {
-    min-height: 100vh;
-  }
   .countdown-container {
     flex-direction: row;
   }
