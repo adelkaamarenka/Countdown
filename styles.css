@@ -39,3 +39,10 @@ h1 {
 .countdown-el span {
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+}
