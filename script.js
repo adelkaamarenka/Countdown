@@ -3,8 +3,9 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
+const newYearsDate = new Date("1 Jan 2023");
+
 function countdown() {
-  const newYearsDate = new Date("1 Jan 2023");
   const currentDate = new Date();
 
   const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -14,18 +15,14 @@ function countdown() {
   const minutes = Math.floor(totalSeconds / 60) % 60;
   const seconds = Math.floor(totalSeconds % 60);
 
-  daysEl.innerHTML = formatTime(days);
-  hoursEl.innerHTML = formatTime(hours);
-  minutesEl.innerHTML = formatTime(minutes);
-  secondsEl.innerHTML = formatTime(seconds);
+  daysEl.textContent = formatTime(days);
+  hoursEl.textContent = formatTime(hours);
+  minutesEl.textContent = formatTime(minutes);
+  secondsEl.textContent = formatTime(seconds);
 }
 
 function formatTime(time) {
-  if (time < 10) {
-    return `0${time}`;
-  } else {
-    return time;
-  }
+  return time < 10 ? `0${time}` : time;
 }
 
 countdown();
